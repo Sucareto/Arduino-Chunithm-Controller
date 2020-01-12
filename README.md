@@ -28,4 +28,4 @@ writeRegister(MPR121_CONFIG2, 0x02);//延迟
 #### 引用库：  
 [mpr121操作 Adafruit_MPR121.h](https://github.com/adafruit/Adafruit_MPR121)  
 [NKRO键盘 HID-Project.h](https://github.com/NicoHood/HID)  
-
+[驱动WS2812B FastLED.h](https://github.com/FastLED/FastLED)
