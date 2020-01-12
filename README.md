@@ -1,8 +1,15 @@
 # Arduino-Chunithm-Controller
-使用 Arduino + mpr121 制作的 Chunithm 控制器。
+使用 Arduino + mpr121 + WS2812B 制作的 Chunithm 控制器。
 
 #### 原理：  
 使用 mpr121 的 12 个io 口分别连接 12 块铝箔（或其他导电物体），arduino 用 i2c 和 mpr121 通信获取触摸状态。    
+
+#### 文件结构：  
+ChuniController.ino 最初版，实现按键功能；
+ChuniController-EEPROM.ino 添加了 EEPROM 存储键值功能；
+ChuniController-EEPROM-Lighting.ino 添加了驱动 WS2812B 灯带功能；
+ShowLED.h 灯效代码，在 ChuniController-EEPROM-Lighting.ino 引入。
+
 
 #### 可能需要修改的地方：  
 Adafruit_MPR121.h：  
