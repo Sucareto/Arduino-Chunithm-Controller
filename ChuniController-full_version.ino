@@ -37,10 +37,10 @@ void setup() {
   Serial.begin(115200);
   Serial.setTimeout(0);
   if (mprA.begin(0x5A, &Wire, TOUCH, RELEASE) && mprB.begin(0x5C, &Wire, TOUCH, RELEASE)) {
-    mprA.writeRegister(MPR121_CONFIG1, 53);
-    mprA.writeRegister(MPR121_CONFIG2, 2);
-    mprB.writeRegister(MPR121_CONFIG1, 53);
-    mprB.writeRegister(MPR121_CONFIG2, 2);
+    mprA.writeRegister(MPR121_CONFIG1, CONFIG1);
+    mprA.writeRegister(MPR121_CONFIG2, CONFIG2);
+    mprB.writeRegister(MPR121_CONFIG1, CONFIG1);
+    mprB.writeRegister(MPR121_CONFIG2, CONFIG2);
 #ifdef SaveCfg
     for (uint8_t i = 0; i < Keys; i++) {
       uint8_t data = EEPROM.read(i);
