@@ -6,7 +6,7 @@
 使用 mpr121 的 io 口分别连接铝箔（或其他导电物体），arduino 用 i2c 和 mpr121 通信获取触摸状态。  
 
 #### 文件结构：  
-多个文件是不同时期的代码，请始终参考最后更新的版本！
+**多个文件是不同时期的代码，请始终参考最后更新的版本！**  
 `ChuniController.ino` 最初版，实现按键功能；  
 `ChuniController-EEPROM.ino` 添加了 EEPROM 存储键值功能；  
 `ChuniController-EEPROM-Lighting.ino` 添加了驱动 WS2812B 灯带功能；  
