@@ -4,7 +4,7 @@
 #define _BV(bit) (1 << (bit))
 #endif
 
-Adafruit_MPR121 cap1, cap2 = Adafruit_MPR121();
+Adafruit_MPR121 cap1, cap2;
 
 int lasttouchedA, currtouchedA, lasttouchedB, currtouchedB  = 0;
 int lastStatus[7] = {0};
@@ -16,7 +16,7 @@ typedef struct {
   char pin;
   uint8_t keycode;
 } LIST;
-LIST SWs[] =
+LIST SWs[7] =
 {
   {21, ']'}, {20, ';'}, {15, '\''}, {14, '.'}, {16, '/'}, {9, KEY_F1}, {10, KEY_F2},
 };

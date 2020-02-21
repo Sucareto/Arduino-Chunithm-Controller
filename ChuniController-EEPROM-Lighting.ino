@@ -7,7 +7,7 @@
 #include "EEPROM.h"
 #include "showLED.h"
 
-Adafruit_MPR121 mprA, mprB = Adafruit_MPR121();
+Adafruit_MPR121 mprA, mprB;
 int lasttouchedA, currtouchedA, lasttouchedB, currtouchedB  = 0;
 
 #define Keys 22
@@ -99,7 +99,6 @@ void ChangeKeyCode() {
     while (Serial.available()) {
       Serial.read();
     }
-    showLED(Setting);
     Serial.println("Error,clear.");
   }
 }

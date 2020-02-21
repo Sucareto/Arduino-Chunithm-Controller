@@ -1,4 +1,4 @@
-#define SaveCfg //开启保存配置
+//#define SaveCfg //开启保存配置
 #define SerialLed //开启串口灯
 
 #ifndef _BV
@@ -14,7 +14,7 @@
 #include "ShowLED.h"
 
 #include "Adafruit_MPR121.h"
-Adafruit_MPR121 mprA, mprB = Adafruit_MPR121();
+Adafruit_MPR121 mprA, mprB;
 uint8_t TOUCH = 3;//按下敏感度
 uint8_t RELEASE = 1;//松开敏感度
 uint8_t CONFIG1 = 53;//电流

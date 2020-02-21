@@ -65,22 +65,6 @@ void showLED(uint8_t code) {
         delay(20);
       }
       break;
-    case Debug://调试用，间隔红蓝
-      for (uint8_t i = 0; i < NUM_LEDS; i++) {
-        ++i;
-        leds[i] = CRGB(0, 0, 255);
-        leds[NUM_LEDS - 1 - i] = CRGB(0, 0, 255);
-        FastLED.show();
-        delay(20);
-      }
-      for (uint8_t i = (NUM_LEDS - 1); i > -1; i--) {
-        --i;
-        leds[i] = CRGB(255, 0, 0);
-        leds[NUM_LEDS - 1 - i] = CRGB(255, 0, 0);
-        FastLED.show();
-        delay(20);
-      }
-      break;
   }
 }
 

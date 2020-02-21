@@ -4,8 +4,8 @@
 #ifndef _BV
 #define _BV(bit) (1 << (bit))
 #endif
-Adafruit_MPR121 mprA, mprB = Adafruit_MPR121();
-int lasttouchedA, currtouchedA, lasttouchedB, currtouchedB  = 0;
+Adafruit_MPR121 mprA, mprB;
+int lasttouchedA, currtouchedA, lasttouchedB, currtouchedB;
 
 #define Keys 22
 int KeyCode[Keys] = {
@@ -75,7 +75,6 @@ void loop() {
       }
     }
     Serial.println("KeyCode updated successfully!");
-    //    Serial.println(KeyCode);
   } else if (Serial.available()) {
     while (Serial.available()) {
       Serial.read();
