@@ -1,0 +1,11 @@
+LIBRARY chuniio
+
+EXPORTS
+    chuni_io_jvs_init
+    chuni_io_jvs_poll
+    chuni_io_jvs_read_coin_counter
+    chuni_io_jvs_set_coin_blocker
+    chuni_io_slider_init
+    chuni_io_slider_set_leds
+    chuni_io_slider_start
+    chuni_io_slider_stop
