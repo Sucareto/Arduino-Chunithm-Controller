@@ -15,3 +15,6 @@
 
 #### 更改：
 缩小了PCB体积将键盘拆分成四块一样的10x10cmPCB，可以使用嘉立创的5块钱打样和捷配的免费打样
+
+#### PCB地址：
+https://lceda.cn/ryujou/chunithm (打样测试中）
