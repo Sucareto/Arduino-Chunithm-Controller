@@ -1,6 +1,6 @@
 # Arduino-Chunithm-Controller
 使用 Arduino + mpr121 + WS2812B 制作的 Chunithm 控制器。
-是用了Sucareto/Arduino-Chunithm-Controller（https://github.com/Sucareto/Arduino-Chunithm-Controller）的固件
+使用了Sucareto/Arduino-Chunithm-Controller（https://github.com/Sucareto/Arduino-Chunithm-Controller）的固件
 
 #### 原理：  
 使用 mpr121 的 io 口分别连接铝箔（或其他导电物体），arduino 用 i2c 和 mpr121 通信获取触摸状态。  
