@@ -5,11 +5,11 @@
 使用 mpr121 的 io 口分别连接铝箔（或其他导电物体），arduino 用 i2c 和 mpr121 通信获取触摸状态。    
 
 #### 版本分别：
-##### ChuniKeyController
+##### [ChuniKeyController](ChuniKeyController/ChuniKeyController.ino)
 只支持 SparkFun Pro Micro（ATmega32U4）  
 触摸和 AIR 使用 HID 按键方案，灯光通过串口从[已修改的 chuniio](ChuniKeyController/chuniio.dll) 读取。  
 不再更新。
-##### ChuniSerialController
+##### [ChuniSerialController](ChuniSerialController/ChuniSerialController.ino)
 支持以下开发板：
 - SparkFun Pro Micro（ATmega32U4），需要发送 DTR/RTS  
 - SparkFun SAMD21 Dev Breakout（ATSAMD21G18）  
