@@ -13,12 +13,11 @@
 支持以下开发板（通过预编译标识符区分）：
 - SparkFun Pro Micro（ATmega32U4），需要发送 DTR/RTS  
 - SparkFun SAMD21 Dev Breakout（ATSAMD21G18）  
-- NodeMCU 1.0（ESP-12E + CP2102 & CH340），无按钮和AIR  
+- NodeMCU 1.0（ESP-12E + CP2102 & CH340），无按钮和 AIR  
 
 通过串口 COM1 直接和主程序通信传输触摸数值和灯光数据，AIR 使用 HID，需要[新版已修改的 chuniio](ChuniSerialController/chuniio)  
 串口部分代码参考了 [ilufang](https://github.com/ilufang) 的实现  
 可支持 32k 触摸和 16 按键 + 15 分割的灯光（默认是 16k 的按键和灯光，可修改代码实现）  
-触摸部分未完成。  
 
 #### 参考 & 引用：  
 [OpeNITHM](https://github.com/jmontineri/OpeNITHM)  
