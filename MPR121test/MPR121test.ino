@@ -20,7 +20,7 @@ uint8_t RstBtn = D6;
 #define LED_PIN D5
 
 #else
-#error "未经测试的开发板，请检查串口和阵脚定义"
+#error "未经测试的开发板，请检查串口和针脚定义"
 #endif
 
 #ifdef Enable_LED

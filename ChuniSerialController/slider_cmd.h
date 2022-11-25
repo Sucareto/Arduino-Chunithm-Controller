@@ -260,7 +260,7 @@ void KeyCheck() {//按钮和AIR检查
     MprSetup(capL);
     MprSetup(capR);
   } else {
-    Keyboard.release(KeyCode[9])；
+    Keyboard.release(KeyCode[9]);
   }
 #endif
 }
